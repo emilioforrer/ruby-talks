@@ -1,3 +1,5 @@
+started_at = Time.now
+
 require_relative("scrapper")
 
 data = Concurrent::Array.new
@@ -29,22 +31,7 @@ Scrapper.get_links.each_slice(25) do |links|
     ## Sequential
     # sequential_link.(link)
     ## Thread
-    # threads << thread_link.(link)
-    ## Fiber (Not same result, fibers are used differently)
-    # fibers << fiber_link.(link)
-  end
-  # fibers.map(&:resume)
-  threads.map(&:join)
-end
-
-Scrapper.get_links.each_slice(25) do |links|
-  threads = []
-  # fibers = []
-  links.each do |link|
-    ## Sequential
-    # sequential_link.(link)
-    ## Thread
-    # threads << thread_link.(link)
+    threads << thread_link.(link)
     ## Fiber (Not same result, fibers are used differently)
     # fibers << fiber_link.(link)
   end
@@ -54,3 +41,4 @@ end
 
 
 puts "total --> #{data.length}"
+puts "Time: #{Time.now - started_at}"

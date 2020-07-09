@@ -223,6 +223,12 @@ Native objects in ruby for atomicity:
 
 ## Results
 
+
+export _JAVA_OPTIONS="-Dhttps.protocols=SSLv3,TLSv1.3,TLSv1.2,TLSv1.1,TLSv1 -Djdk.tls.client.protocols=SSLv3,TLSv1.3,TLSv1.2,TLSv1.1,TLSv1 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true" # -Djavax.net.debug=all
+asdf global ruby 2.7.1
+asdf global ruby truffleruby-20.1.0
+asdf global ruby jruby-9.2.11.1
+
 ### Sequential
 
 total --> 500

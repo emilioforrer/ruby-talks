@@ -2,6 +2,15 @@ require "nokogiri"
 require "faraday"
 require 'pry'
 require 'concurrent'
+
+if RUBY_PLATFORM == "java"
+  # java.lang.System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2,SSLv2,SSLv3");
+  # java.lang.System.setProperty("https.protocols", "SSLv3");
+  # java.lang.System.setProperty("https.protocols", "SSLv3")
+  # java.lang.System.setProperty("jdk.tls.client.protocols", "TLSv1.2");
+  # java.security.Security.setProperty("jdk.tls.disabledAlgorithms", "SSLv3, DHE")
+end
+
 module Scrapper
   module_function
 
@@ -20,9 +29,10 @@ module Scrapper
   end
 
   def get_links
-    (
-      method(:read_bookmarks) >> method(:html_dom)
-    ).call.css("a").first(500)
+    # (
+    #   method(:read_bookmarks) >> method(:html_dom)
+    # ).call.css("a").first(500)
+    html_dom(read_bookmarks).css("a").first(500)
   end
 
   def get_page(link)
