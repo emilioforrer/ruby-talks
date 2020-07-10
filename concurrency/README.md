@@ -224,7 +224,7 @@ Native objects in ruby for atomicity:
 ## Results
 
 
-export _JAVA_OPTIONS="-Dhttps.protocols=SSLv3,TLSv1.3,TLSv1.2,TLSv1.1,TLSv1 -Djdk.tls.client.protocols=SSLv3,TLSv1.3,TLSv1.2,TLSv1.1,TLSv1 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true" # -Djavax.net.debug=all
+
 asdf global ruby 2.7.1
 asdf global ruby truffleruby-20.1.0
 asdf global ruby jruby-9.2.11.1
@@ -281,3 +281,25 @@ sys     0m0.551s
 * https://www.jstorimer.com/blogs/workingwithcode/8100871-nobody-understands-the-gil-part-2-implementation
 * http://www.rubyinside.com/does-the-gil-make-your-ruby-code-thread-safe-6051.html
 * http://underpop.online.fr/j/java/help/thread-scheduling-network-dev-java-programming-language.html.gz
+
+
+### Troubles
+
+export _JAVA_OPTIONS="-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Djdk.tls.client.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Djdk.tls.disabledAlgorithms= " # -Djavax.net.debug=all -Djdk.tls.disabledAlgorithms=SSLv3
+
+Comparing OpenSSL::SSL::SSLContext::METHODS
+
+if RUBY_PLATFORM == "java"
+  # java.lang.System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2,SSLv2,SSLv3");
+  # java.lang.System.setProperty("https.protocols", "SSLv3");
+  # java.lang.System.setProperty("https.protocols", "SSLv3")
+  # java.lang.System.setProperty("jdk.tls.client.protocols", "TLSv1.2");
+  # java.security.Security.setProperty("jdk.tls.disabledAlgorithms", "SSLv3, DHE")
+end
+
+url = "https://prathamesh.tech/2020/06/15/allowing-dots-in-rails-routes/"
+conn = Faraday.new(:ssl => {:verify => false, :version => :SSLv3})
+
+response = conn.get url
+
+sed -i.bak -e 's/SECLEVEL=2/SECLEVEL=1/' /usr/lib/ssl/openssl.cnf # FIX SSL_connect returned=1 errno=0 state=error: wrong signature type
