@@ -3,6 +3,7 @@ require "faraday"
 require 'pry'
 require 'concurrent'
 
+## test some ruby functional capabilities
 module Scrapper
   module_function
 
@@ -21,6 +22,7 @@ module Scrapper
   end
 
   def get_links
+    # Jruby does not sopport function composition yet :(
     # (
     #   method(:read_bookmarks) >> method(:html_dom)
     # ).call.css("a").first(500)

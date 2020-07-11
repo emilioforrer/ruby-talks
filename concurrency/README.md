@@ -285,9 +285,20 @@ sys     0m0.551s
 
 ### Troubles
 
-export _JAVA_OPTIONS="-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Djdk.tls.client.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Djdk.tls.disabledAlgorithms= " # -Djavax.net.debug=all -Djdk.tls.disabledAlgorithms=SSLv3
 
-Comparing OpenSSL::SSL::SSLContext::METHODS
+For some reason this URLs give troubles with jruby
+
+* https://prathamesh.tech/2020/06/15/allowing-dots-in-rails-routes/
+* https://blog.evalcode.com/phoenix-liveview-inline-syntax-highlighting-for-emacs/
+
+Tried next solutions but none worked so far.
+
+```bash
+export _JAVA_OPTIONS="-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Djdk.tls.client.protocols=TLSv1,TLSv1.1,TLSv1.2,SSLv3 -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Djdk.tls.disabledAlgorithms= " # -Djavax.net.debug=all -Djdk.tls.disabledAlgorithms=SSLv3
+```
+
+```ruby
+# To see the list of available methods `Comparing OpenSSL::SSL::SSLContext::METHODS`
 
 if RUBY_PLATFORM == "java"
   # java.lang.System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2,SSLv2,SSLv3");
@@ -303,3 +314,4 @@ conn = Faraday.new(:ssl => {:verify => false, :version => :SSLv3})
 response = conn.get url
 
 sed -i.bak -e 's/SECLEVEL=2/SECLEVEL=1/' /usr/lib/ssl/openssl.cnf # FIX SSL_connect returned=1 errno=0 state=error: wrong signature type
+```
