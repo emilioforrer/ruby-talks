@@ -1,0 +1,13 @@
+
+.w-full.max-w-xs.mx-auto.py-10.my-10
+  = form_for :data, :url => user_sessions_path, :html => {:class => "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"} do |f|
+    %h2.text-center Login
+    .mb-4
+      = f.label :email, :class => 'block text-gray-700 text-sm font-bold mb-2'
+      = f.text_field :email, value: data.email, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    .mb-6
+      = f.label :password, :class => 'block text-gray-700 text-sm font-bold mb-2'
+      = f.password_field :password, value: data.password, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    .mb-3
+      .flex.items-center.justify-between
+        = f.submit "Sign In", :class => "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

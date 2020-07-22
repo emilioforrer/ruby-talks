@@ -1,0 +1,10 @@
+= form_for :filter, url: users_path, html: {class: "py-3"}, method: :get do |f|
+  = f.text_field "name", value: filter.name, class: "shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder: "Search by name"
+  = f.submit "Search", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  = link_to "clear", users_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block"
+
+- if model.length >0
+  = cell("view_models/users/item", collection: model)
+- else
+  .text-center
+    = "There are no results :("

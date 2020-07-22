@@ -1,0 +1,24 @@
+
+GET http://localhost:3000/api/v1/contacts HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "data": {
+      "name": "Jonh Doe"
+    }
+}
+
+###
+
+PUT http://localhost:3000/api/v1/contacts/a6f3e4e8-3242-4b71-8e56-23d73dacb50d HTTP/1.1
+content-type: application/json
+
+{
+    "data": {
+      "name": "John Doe Remaster"
+    }
+}

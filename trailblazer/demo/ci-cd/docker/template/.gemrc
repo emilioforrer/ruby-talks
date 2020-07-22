@@ -1,0 +1,2 @@
+gem: --user-install --no-rdoc --no-ri --no-document
+:backtrace: true
