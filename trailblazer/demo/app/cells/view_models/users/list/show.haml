@@ -3,7 +3,7 @@
   = f.submit "Search", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
   = link_to "clear", users_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block"
 
-- if model.length >0
+- if model.length > 0
   = cell("view_models/users/item", collection: model)
 - else
   .text-center

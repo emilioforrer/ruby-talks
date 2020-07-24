@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
     result = Operations::Users::Login.(params: params)
     if result.success?
       login(result[:data].fetch(:email), result[:data].fetch(:password))
-      redirect_to root_path
+      redirect_to root_path and return
     else
       flash[:error] = result[:error] and render action: :new
     end

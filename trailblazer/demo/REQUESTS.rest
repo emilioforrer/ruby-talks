@@ -19,6 +19,6 @@ content-type: application/json
 
 {
     "data": {
-      "name": "John Doe Remaster"
+      "name": "John Doe Remaster 1"
     }
 }

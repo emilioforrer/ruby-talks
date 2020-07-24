@@ -142,3 +142,6 @@ Representable maps objects to documents (rendering) and documents to objects (pa
 * https://www.youtube.com/watch?v=gbcE-qK_190
 * https://trailblazer.to/2.1/blog.html
 * https://www.2n.pl/blog?tag=trailblazer
+* https://medium.com/@baweaver/functional-programming-in-ruby-flow-control-565bbdcdf2a2
+* https://fsharpforfunandprofit.com/posts/against-railway-oriented-programming/
+* https://blog.primehammer.com/wp-content/uploads/2019/02/ruby-stories-rop-erich.pdf
