@@ -261,7 +261,13 @@ A relation class is used to represent data returning from a database, and is use
 module Demo
   module Relations
     class Contacts < ROM::Relation[:sql]
-      schema(:contacts, infer: true)
+      schema(:contacts, infer: true) do
+        associations do
+          has_many :emails
+          has_many :phones
+          has_many :addresses
+        end
+      end
 
       def sorted
         order(:name)
@@ -269,6 +275,60 @@ module Demo
 
       def starred
         where(starred: true).order(:name)
+      end
+    end
+  end
+end
+```
+
+**Addresses**
+
+`lib/demo/relations/addresses.rb`
+
+```ruby
+module Demo
+  module Relations
+    class Addresses < ROM::Relation[:sql]
+      schema(:addresses, infer: true) do
+        associations do
+          belongs_to :contact
+        end
+      end
+    end
+  end
+end
+```
+
+**Emails**
+
+`lib/demo/relations/emails.rb`
+
+```ruby
+module Demo
+  module Relations
+    class Emails < ROM::Relation[:sql]
+      schema(:emails, infer: true) do
+        associations do
+          belongs_to :contact
+        end
+      end
+    end
+  end
+end
+```
+
+**Phones**
+
+`lib/demo/relations/phones.rb`
+
+```ruby
+module Demo
+  module Relations
+    class Phones < ROM::Relation[:sql]
+      schema(:phones, infer: true) do
+        associations do
+          belongs_to :contact
+        end
       end
     end
   end
@@ -304,11 +364,86 @@ module Demo
       def starred_and_sorted
         contacts.starred.sorted
       end
+
+      def create_with_phones(contact)
+        contacts.combine(:phones).command(:create, use: :timestamps,
+          plugins_options: {
+            timestamps: {
+              timestamps: %i(created_at updated_at)
+            }
+          }
+        ).call(contact)
+      end
     end
   end
 end
 ```
 
+**Phones**
+
+`lib/demo/repos/phone_repo.rb`
+
+```ruby
+module Demo
+  module Repos
+    class PhoneRepo < ROM::Repository[:phones]
+      include Import["container"]
+
+      commands :create,
+        use: :timestamps,
+        plugins_options: {
+          timestamps: {
+            timestamps: %i(created_at updated_at)
+          }
+        }
+    end
+  end
+end
+```
+
+**Emails**
+
+`lib/demo/repos/email_repo.rb`
+
+```ruby
+module Demo
+  module Repos
+    class EmailRepo < ROM::Repository[:emails]
+      include Import["container"]
+
+      commands :create,
+        use: :timestamps,
+        plugins_options: {
+          timestamps: {
+            timestamps: %i(created_at updated_at)
+          }
+        }
+    end
+  end
+end
+```
+
+**Addresses**
+
+`lib/demo/repos/email_repo.rb`
+
+```ruby
+module Demo
+  module Repos
+    class AddressRepo < ROM::Repository[:addresses]
+      include Import["container"]
+
+      commands :create,
+        use: :timestamps,
+        plugins_options: {
+          timestamps: {
+            timestamps: %i(created_at updated_at)
+          }
+        }
+    end
+  end
+end
+```
 
 
 ### Try it!
@@ -338,11 +473,29 @@ contact_repo = Demo::Repos::ContactRepo.new() # otherwise Demo::Repos::ContactRe
 john = contact_repo.create(name: "John Doe", uuid: SecureRandom.uuid)
 jane = contact_repo.create(name: "Jane Doe", uuid: SecureRandom.uuid, starred: true)
 
+# Create with nested association
+
+joe = contact_repo.create_with_phones(
+  name: "Joe Smith",
+  uuid: SecureRandom.uuid,
+  phones: [
+    { 
+      number: "+50322577777",
+      uuid: SecureRandom.uuid,
+    }
+  ]
+)
+
+
 # Select only the starred contacts and sorted by name
 
 contacts = Demo::Application['container'].relations[:contacts].starred.sorted
 
 contacts = contact_repo.starred_and_sorted
+
+# Get connection
+
+connection = Demo::Application['container'].gateways[:default].connection
 
 ```
 
@@ -352,3 +505,4 @@ contacts = contact_repo.starred_and_sorted
 * [How to setup Ruby Object Mapper (ROM) for standalone project](https://medium.com/@igkuz/how-to-setup-ruby-object-mapper-rom-for-standalone-project-15472fcf31e1)
 * [ROM + Dry Showcase: Part 1 - Application + Database setup](https://ryanbigg.com/2020/02/rom-and-dry-showcase-part-1)
 * [Sequel Schema doc](https://github.com/jeremyevans/sequel/blob/master/doc/schema_modification.rdoc)
+* [A conversational introduction to rom-rb](http://icelab.github.io/conversational-intro-to-rom-rb/part-1.html)
