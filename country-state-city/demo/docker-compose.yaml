@@ -1,0 +1,36 @@
+version: '3.7'
+x-base: &base
+  image: demo-ruby-api_web
+  build:
+    context: .
+    dockerfile: ./ci-cd/docker/Dockerfile
+    args: &args
+      DOCKER_UID: ${DOCKER_UID}
+      DOCKER_GID: ${DOCKER_GID}
+      DOCKER_USER: ${DOCKER_USER}
+  env_file:
+    - .env
+  depends_on:
+      - 'db'
+  volumes:
+    - ".:/home/${DOCKER_USER}/workspace"
+services:
+  db:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+  web:
+    <<: *base 
+    ports:
+      - "3000:3000"
+  webpacker:
+    <<: *base
+    command: ./bin/webpack-dev-server
+    ports:
+      - "3035:3035"
+    
+volumes:
+  redis:
+    driver: local

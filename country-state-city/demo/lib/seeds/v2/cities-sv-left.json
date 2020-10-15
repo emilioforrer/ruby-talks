@@ -1,0 +1,1158 @@
+[
+  {
+    "state_code": "AH",
+    "country_code": "SV",
+    "name": "Apaneca", 
+    "latitude": "13.850000",
+    "longitude": "-89.800000"
+  },
+  {
+    "state_code": "AH",
+    "country_code": "SV",
+    "name": "El Refugio", 
+    "latitude": "13.800000",
+    "longitude": "-89.966667"
+  },
+  {
+    "state_code": "AH",
+    "country_code": "SV",
+    "name": "San Lorenzo",
+    "latitude": "14.033333",
+    "longitude": "-89.783333"
+  },
+  {
+    "state_code": "AH",
+    "country_code": "SV",
+    "name": "San Pedro Puxtla",
+    "latitude": "13.766667",
+    "longitude": "-89.800000"
+  },
+  {
+    "state_code": "AH",
+    "country_code": "SV",
+    "name": "Turín",
+    "latitude": "13.966667",
+    "longitude": "-89.816667"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Cinquera",
+    "latitude": "13.883333",
+    "longitude": "-88.966667"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Dolores",
+    "latitude": "13.783333",
+    "longitude": "-88.566667"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Guacotecti",
+    "latitude": "13.866667",
+    "longitude": "-88.650000"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Ilobasco",
+    "latitude": "13.866667",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Jutiapa",
+    "latitude": "13.883333",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "San Isidro",
+    "latitude": "13.833333",
+    "longitude": "-88.716667"
+  },
+  {
+    "state_code": "CA",
+    "country_code": "SV",
+    "name": "Tejutepeque",
+    "latitude": "13.850000",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Agua Caliente",
+    "latitude": "14.166667",
+    "longitude": "-89.216667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Arcatao",
+    "latitude": "14.093889",
+    "longitude": "-88.749444"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Azacualpa",
+    "latitude": "13.966667",
+    "longitude": "-88.966667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Cancasque",
+    "latitude": "13.983333",
+    "longitude": "-88.850000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Citalá",
+    "latitude": "14.366667",
+    "longitude": "-89.216667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Comalapa",
+    "latitude": "14.133333",
+    "longitude": "-88.950000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Concepción Quezaltepeque",
+    "latitude": "14.083333",
+    "longitude": "-88.950000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Dulce Nombre de María",
+    "latitude": "14.150000",
+    "longitude": "-89.016667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "El Carrizal",
+    "latitude": "14.166667",
+    "longitude": "-88.866667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "El Paraíso",
+    "latitude": "14.083333",
+    "longitude": "-89.083333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "La Laguna",
+    "latitude": "14.066667",
+    "longitude": "-88.866667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "La Palma",
+    "latitude": "14.316667",
+    "longitude": "-89.166667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "La Reina",
+    "latitude": "14.183333",
+    "longitude": "-89.150000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Las Flores",
+    "latitude": "14.050000",
+    "longitude": "-88.833333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Las Vueltas",
+    "latitude": "14.100000",
+    "longitude": "-88.883333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Nombre de Jesús",
+    "latitude": "14.000000",
+    "longitude": "-88.733333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Nueva Trinidad",
+    "latitude": "14.066667",
+    "longitude": "-88.800000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Ojos de Agua",
+    "latitude": "14.050000",
+    "longitude": "-89.066667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Potonico",
+    "latitude": "13.966667",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Antonio de la Cruz",
+    "latitude": "14.016667",
+    "longitude": "-88.783333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Antonio Los Ranchos",
+    "latitude": "14.000000",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Fernando",
+    "latitude": "14.300000",
+    "longitude": "-89.033333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Francisco Lempa",
+    "latitude": "13.966667",
+    "longitude": "-89.016667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Francisco Morazán",
+    "latitude": "14.183333",
+    "longitude": "-89.050000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Ignacio",
+    "latitude": "14.333333",
+    "longitude": "-89.183333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Isidro Labrador",
+    "latitude": "14.000000",
+    "longitude": "-88.850000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Luis del Carmen",
+    "latitude": "13.966667",
+    "longitude": "-88.966667"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Miguel de Mercedes",
+    "latitude": "14.016667",
+    "longitude": "-88.933333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Rafael",
+    "latitude": "14.133333",
+    "longitude": "-89.033333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "San Rafael",
+    "latitude": "14.133333",
+    "longitude": "-89.033333"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Santa Rita",
+    "latitude": "14.133333",
+    "longitude": "-89.000000"
+  },
+  {
+    "state_code": "CH",
+    "country_code": "SV",
+    "name": "Tejutla",
+    "latitude": "14.166667",
+    "longitude": "-89.100000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "Candelaria",
+    "latitude": "13.750000",
+    "longitude": "-88.950000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "El Carmen",
+    "latitude": "13.716667",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "El Rosario",
+    "latitude": "13.768333",
+    "longitude": "-88.908611"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "Monte San Juan",
+    "latitude": "13.766667",
+    "longitude": "-88.950000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "Oratorio de Concepción",
+    "latitude": "13.816667",
+    "longitude": "-89.066667"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San Bartolomé Perulapía",
+    "latitude": "13.765833",
+    "longitude": "-89.050833"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San Cristóbal",
+    "latitude": "13.699750",
+    "longitude": "-88.901917"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San José Guayabal",
+    "latitude": "13.850000",
+    "longitude": "-89.100000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San Pedro Perulapán",
+    "latitude": "13.766667",
+    "longitude": "-89.033333"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San Rafael Cedros",
+    "latitude": "13.733333",
+    "longitude": "-88.883333"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "San Ramón",
+    "latitude": "13.683056",
+    "longitude": "-88.926667"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "Santa Cruz Analquito",
+    "latitude": "13.650000",
+    "longitude": "-88.950000"
+  },
+  {
+    "state_code": "CU",
+    "country_code": "SV",
+    "name": "Santa Cruz Michapa",
+    "latitude": "13.733333",
+    "longitude": "-88.966667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Chiltiupán",
+    "latitude": "13.583333",
+    "longitude": "-89.466667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Colón",
+    "latitude": "13.716667",
+    "longitude": "-89.366667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Comasagua",
+    "latitude": "13.633333",
+    "longitude": "-89.383333"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Huizúcar",
+    "latitude": "13.583333",
+    "longitude": "-89.233333"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Jayaque",
+    "latitude": "13.666667",
+    "longitude": "-89.433333"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Jicalapa",
+    "latitude": "13.550000",
+    "longitude": "-89.500000"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Sacacoyo",
+    "latitude": "13.733333",
+    "longitude": "-89.466667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "San José Villanueva",
+    "latitude": "13.583300",
+    "longitude": "-89.266700"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "San Matías",
+    "latitude": "13.883333",
+    "longitude": "-89.316667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Talnique",
+    "latitude": "13.666667",
+    "longitude": "-89.400000"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Tamanique",
+    "latitude": "13.600000",
+    "longitude": "-89.416667"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Teotepeque",
+    "latitude": "13.585278",
+    "longitude": "-89.518333"
+  },
+  {
+    "state_code": "LI",
+    "country_code": "SV",
+    "name": "Tepecoyo",
+    "latitude": "13.700278",
+    "longitude": "-89.467778"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Cuyultitán",
+    "latitude": "13.550000",
+    "longitude": "-89.100000"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Jerusalén",
+    "latitude": "13.650000",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Mercedes La Ceiba",
+    "latitude": "13.633333",
+    "longitude": "-88.900000"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Paraíso de Osorio",
+    "latitude": "13.633333",
+    "longitude": "-88.966667"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Antonio Masahuat",
+    "latitude": "13.566667",
+    "longitude": "-89.033333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Emigdio",
+    "latitude": "13.650000",
+    "longitude": "-88.983333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Francisco Chinameca",
+    "latitude": "13.600000",
+    "longitude": "-89.100000"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Juan Nonualco",
+    "latitude": "13.505889",
+    "longitude": "-88.897833"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Juan Talpa",
+    "latitude": "13.500000",
+    "longitude": "-89.083333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Juan Tepezontes",
+    "latitude": "13.616667",
+    "longitude": "-89.016667"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Luis La Herradura",
+    "latitude": "13.351944",
+    "longitude": "-88.954444"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Luis Talpa",
+    "latitude": "13.466667",
+    "longitude": "-89.083333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Miguel Tepezontes",
+    "latitude": "13.616667",
+    "longitude": "-89.016667"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Pedro Nonualco",
+    "latitude": "13.600000",
+    "longitude": "-88.933333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "San Rafael Obrajuelo",
+    "latitude": "13.500000",
+    "longitude": "-88.933333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Santa María Ostuma",
+    "latitude": "13.616667",
+    "longitude": "-88.933333"
+  },
+  {
+    "state_code": "PA",
+    "country_code": "SV",
+    "name": "Tapalhuaca",
+    "latitude": "13.566667",
+    "longitude": "-89.083333"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Bolívar",
+    "latitude": "13.583333",
+    "longitude": "-87.950000"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Concepción de Oriente",
+    "latitude": "13.786800",
+    "longitude": "-87.710500"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "El Carmen",
+    "latitude": "13.350000",
+    "longitude": "-88.000000"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "El Sauce",
+    "latitude": "13.668889",
+    "longitude": "-87.800556"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Lislique",
+    "latitude": "13.800000",
+    "longitude": "-87.883333"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Meanguera del Golfo",
+    "latitude": "13.179722",
+    "longitude": "-87.697500"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Polorós",
+    "latitude": "13.584444",
+    "longitude": "-87.841111"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "San José",
+    "latitude": "13.416667",
+    "longitude": "-87.983333"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Yayantique",
+    "latitude": "13.450000",
+    "longitude": "-88.016667"
+  },
+  {
+    "state_code": "UN",
+    "country_code": "SV",
+    "name": "Yucuaiquín",
+    "latitude": "13.550000",
+    "longitude": "-88.000000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Arambala",
+    "latitude": "13.916667",
+    "longitude": "-88.133333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Chilanga",
+    "latitude": "13.716667",
+    "longitude": "-88.116667"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Delicias de Concepción",
+    "latitude": "13.783333",
+    "longitude": "-88.133333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "El Divisadero",
+    "latitude": "13.600000",
+    "longitude": "-88.050000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "El Rosario",
+    "latitude": "13.500000",
+    "longitude": "-88.033333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Gualococti",
+    "latitude": "13.816667",
+    "longitude": "-88.216667"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Joateca",
+    "latitude": "13.900000",
+    "longitude": "-88.050000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Jocoaitique",
+    "latitude": "13.883333",
+    "longitude": "-88.133333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Lolotiquillo",
+    "latitude": "13.733333",
+    "longitude": "-88.083333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Meanguera",
+    "latitude": "13.850000",
+    "longitude": "-88.150000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Osicala",
+    "latitude": "13.800000",
+    "longitude": "-88.150000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Perquín",
+    "latitude": "13.950000",
+    "longitude": "-88.166667"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "San Carlos",
+    "latitude": "13.650000",
+    "longitude": "-88.100000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "San Fernando",
+    "latitude": "13.966667",
+    "longitude": "-88.200000"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "San Isidro",
+    "latitude": "13.850000",
+    "longitude": "-88.233333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "San Simón",
+    "latitude": "13.833333",
+    "longitude": "-88.233333"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Sensembra",
+    "latitude": "13.666667",
+    "longitude": "-88.166667"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Torola",
+    "latitude": "13.916700",
+    "longitude": "-88.233300"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Yamabal",
+    "latitude": "13.666700",
+    "longitude": "-88.166700"
+  },
+  {
+    "state_code": "MO",
+    "country_code": "SV",
+    "name": "Yoloaiquín",
+    "latitude": "13.766700",
+    "longitude": "-88.150000"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "Carolina",
+    "latitude": "13.850000",
+    "longitude": "-88.300000"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "Comacarán",
+    "latitude": "13.533333",
+    "longitude": "-88.066667"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "Nuevo Edén de San Juan",
+    "latitude": "13.825006",
+    "longitude": "-88.487058"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "Quelepa",
+    "latitude": "13.516700",
+    "longitude": "-88.233300"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "San Antonio",
+    "latitude": "13.833333",
+    "longitude": "-88.266667"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "San Gerardo",
+    "latitude": "13.800000",
+    "longitude": "-88.400000"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "San Jorge",
+    "latitude": "13.683333",
+    "longitude": "-88.383333"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "San Luis de la Reina",
+    "latitude": "13.816667",
+    "longitude": "-88.350000"
+  },
+  {
+    "state_code": "SM",
+    "country_code": "SV",
+    "name": "Uluazapa",
+    "latitude": "13.500000",
+    "longitude": "-88.066700"
+  },
+  {
+    "state_code": "SS",
+    "country_code": "SV",
+    "name": "Nejapa",
+    "latitude": "13.816667",
+    "longitude": "-89.233333"
+  },
+  {
+    "state_code": "SS",
+    "country_code": "SV",
+    "name": "San Martín",
+    "latitude": "13.741667",
+    "longitude": "-89.056389"
+  },
+  {
+    "state_code": "SS",
+    "country_code": "SV",
+    "name": "Santiago Texacuangos",
+    "latitude": "13.650000",
+    "longitude": "-89.116667"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Guadalupe",
+    "latitude": "13.616667",
+    "longitude": "-88.866667"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "San Cayetano Istepeque",
+    "latitude": "13.650000",
+    "longitude": "-88.816667"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "San Esteban Catarina",
+    "latitude": "13.683333",
+    "longitude": "-88.783333"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "San Ildefonso",
+    "latitude": "13.700000",
+    "longitude": "-88.566667"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "San Lorenzo",
+    "latitude": "13.716667",
+    "longitude": "-88.800000"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Santa Clara",
+    "latitude": "13.700000",
+    "longitude": "-88.733333"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Santo Domingo",
+    "latitude": "13.633333",
+    "longitude": "-88.800000"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Tecoluca",
+    "latitude": "13.533333",
+    "longitude": "-88.783333"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Tepetitán",
+    "latitude": "13.650000",
+    "longitude": "-88.833300"
+  },
+  {
+    "state_code": "SV",
+    "country_code": "SV",
+    "name": "Verapaz",
+    "latitude": "13.643850",
+    "longitude": "-88.870694"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "El Porvenir",
+    "latitude": "14.020700",
+    "longitude": "-89.647100"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "Masahuat",
+    "latitude": "14.183333",
+    "longitude": "-89.433333"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "San Antonio Pajonal",
+    "latitude": "14.196780",
+    "longitude": "-89.580820"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "San Sebastián Salitrillo",
+    "latitude": "13.966667",
+    "longitude": "-89.633333"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "Santa Rosa Guachipilín",
+    "latitude": "14.200000",
+    "longitude": "-89.350000"
+  },
+  {
+    "state_code": "SA",
+    "country_code": "SV",
+    "name": "Santiago de la Frontera",
+    "latitude": "14.183333",
+    "longitude": "-89.600000"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Caluco",
+    "latitude": "13.716667",
+    "longitude": "-89.666667"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Cuisnahuat",
+    "latitude": "13.633333",
+    "longitude": "-89.600000"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Nahulingo",
+    "latitude": "13.700000",
+    "longitude": "-89.716667"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Salcoatitán",
+    "latitude": "13.833333",
+    "longitude": "-89.750000"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "San Julián",
+    "latitude": "13.697556",
+    "longitude": "-89.559639"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Santa Catarina Masahuat",
+    "latitude": "13.783333",
+    "longitude": "-89.766667"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Santa Isabel Ishuatán",
+    "latitude": "13.616667",
+    "longitude": "-89.583333"
+  },
+  {
+    "state_code": "SO",
+    "country_code": "SV",
+    "name": "Santo Domingo de Guzmán",
+    "latitude": "13.716111",
+    "longitude": "-89.797778"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Alegría",
+    "latitude": "13.500000",
+    "longitude": "-88.483333"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "California",
+    "latitude": "13.366667",
+    "longitude": "-88.666667"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "El Triunfo",
+    "latitude": "13.558889",
+    "longitude": "-88.430000"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Ereguayquín",
+    "latitude": "13.350000",
+    "longitude": "-88.383333"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Estanzuelas",
+    "latitude": "13.650000",
+    "longitude": "-88.500000"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Mercedes Umaña",
+    "latitude": "13.566667",
+    "longitude": "-88.500000"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Nueva Granada",
+    "latitude": "13.600000",
+    "longitude": "-88.450000"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "San Buenaventura",
+    "latitude": "13.533300",
+    "longitude": "-88.383300"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "San Dionisio",
+    "latitude": "13.283333",
+    "longitude": "-88.466667"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "San Francisco Javier",
+    "latitude": "13.416667",
+    "longitude": "-88.566667"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Santa María",
+    "latitude": "13.350000",
+    "longitude": "-88.433333"
+  },
+  {
+    "state_code": "US",
+    "country_code": "SV",
+    "name": "Tecapán",
+    "latitude": "13.450000",
+    "longitude": "-88.483333"
+  }
+]
+
