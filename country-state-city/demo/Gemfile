@@ -53,30 +53,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
-gem "sorcery", "~> 0.15.0"
-
-
-
-gem "therubyracer", "~> 0.12.3"
-
-gem "trailblazer-rails", "~> 2.1"
-
-gem "trailblazer-cells"
-
-gem "cells-erb"
-
-gem "cells-hamlit2"
-
 gem "hamlit", "~> 2.11"
-
-gem "cells-rails", "~> 0.1.2"
-
 
 gem "hamlit-rails", "~> 0.2.3"
 
 gem "faker", "~> 2.13"
-
-gem "reform", "~> 2.3"
-
-gem "reform-rails", "~> 0.2.0"

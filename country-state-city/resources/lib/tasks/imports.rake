@@ -18,7 +18,7 @@ namespace :imports do
       City.insert_all!(data["cities"])
       puts "  == countries, states and cities imported =="
     else
-      puts "  == Alredy imported =="
+      puts "  == Already imported =="
     end
   end
 
