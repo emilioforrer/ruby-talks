@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "place"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.23104420304298,
+              13.694566884597549
+            ],
+            [
+              -89.23099994659424,
+              13.69373818848234
+            ],
+            [
+              -89.23007726669312,
+              13.693790307820938
+            ],
+            [
+              -89.23010542988777,
+              13.694461343273469
+            ],
+            [
+              -89.23039510846138,
+              13.694607276943618
+            ],
+            [
+              -89.23104420304298,
+              13.694566884597549
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "place"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.23060767352581,
+          13.694099114665104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff0000",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "user",
+        "name": "John Doe",
+        "description": "user at street, just outside the polygon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.23079006373881,
+          13.693700401954645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#01f93f",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "user",
+        "name": "Jane Smith",
+        "description": "user at 'Longhorn Multiplaza'"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.2484986782074,
+          13.679764577223676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2a01f4",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "user",
+        "name": "Barry Tone",
+        "description": "user at 'La Pampa Argentina'"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.257972240448,
+          13.662104832443106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#090101",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "user",
+        "name": "Richard Tea",
+        "description": "user inside the polygon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.23047423362732,
+          13.69419683826548
+        ]
+      }
+    }
+  ]
+}

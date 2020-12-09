@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Demo
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{href: "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css", rel: "stylesheet"}/
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    = render 'shared/nav'
+    = render 'shared/flash_message'
+    .py-10.px-4
+      = yield

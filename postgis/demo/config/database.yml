@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgis
+  encoding: unicode
+  host: <%= ENV['DB_HOST'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 8 } %>
+  port: <%= ENV.fetch('DB_PORT', '5432') %>
+  database: <%= ENV.fetch('DB_NAME', 'development') %>
+  schema_search_path: public
+
+development:
+  <<: *default
+
+<% if ENV['RAILS_ENV'] && ENV['RAILS_ENV'] != "production" %>
+test:
+  <<: *default
+  database: test
+<% end %>
+
+production:
+  <<: *default
