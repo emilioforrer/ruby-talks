@@ -22,15 +22,11 @@ class ImportPokemonsJob < ApplicationJob
 
   def construct_model(record)
     type_id = record['Type'].present? ? Type.find_or_create_by(name: record['Type'])&.id : nil
-    pokemons << { total: record['Total'],
-                  type_id: type_id,
-                  name: record['Name'],
-                  hp: record['HP'],
-                  attack: record['Attack'],
-                  defense: record['Defense'],
-                  speed: record['Speed'],
-                  generation: record['Generatio'],
-                  legendary: record['Legendary'] == 'True' }
+    image_name = record['Name'].parameterize.gsub('-', '_')
+    pokemons << { total: record['Total'], type_id: type_id, name: record['Name'],
+                  hp: record['HP'], attack: record['Attack'], defense: record['Defense'],
+                  speed: record['Speed'], generation: record['Generation'], legendary: record['Legendary'] == 'True',
+                  image_url: "https://play.pokemonshowdown.com/sprites/gen#{record['Generation']}/#{image_name}.png" }
   end
 
   def print_result!(import, total)

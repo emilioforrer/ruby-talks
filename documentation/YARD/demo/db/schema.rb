@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_29_161303) do
+ActiveRecord::Schema.define(version: 2021_03_29_161712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 2021_03_29_161303) do
     t.bigint "type_id", null: false
     t.datetime "created_at", precision: 6, default: -> { "CURRENT_TIMESTAMP" }, null: false
     t.datetime "updated_at", precision: 6, default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.string "image_url"
     t.index ["name"], name: "index_pokemons_on_name", unique: true
     t.index ["type_id"], name: "index_pokemons_on_type_id"
   end
