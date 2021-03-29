@@ -30,7 +30,7 @@ class ImportPokemonsJob < ApplicationJob
                   defense: record['Defense'],
                   speed: record['Speed'],
                   generation: record['Generatio'],
-                  legendary: record['Legendary'] == 'true' }
+                  legendary: record['Legendary'] == 'True' }
   end
 
   def print_result!(import, total)
