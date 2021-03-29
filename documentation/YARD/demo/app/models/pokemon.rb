@@ -1,3 +1,3 @@
 class Pokemon < ApplicationRecord
-  belongs_to :types
+  belongs_to :type
 end

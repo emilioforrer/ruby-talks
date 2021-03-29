@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_19_045808) do
+ActiveRecord::Schema.define(version: 2021_03_19_205405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,29 @@ ActiveRecord::Schema.define(version: 2021_03_19_045808) do
     t.index ["uid"], name: "index_oauth_applications_on_uid", unique: true
   end
 
+  create_table "pokemons", force: :cascade do |t|
+    t.string "name"
+    t.integer "total"
+    t.integer "hp"
+    t.integer "attack"
+    t.integer "defense"
+    t.integer "speed"
+    t.integer "generation"
+    t.boolean "legendary"
+    t.bigint "type_id", null: false
+    t.datetime "created_at", precision: 6, default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "updated_at", precision: 6, default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.index ["name"], name: "index_pokemons_on_name", unique: true
+    t.index ["type_id"], name: "index_pokemons_on_type_id"
+  end
+
+  create_table "types", force: :cascade do |t|
+    t.string "name"
+    t.integer "sort"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "crypted_password"
@@ -72,4 +95,5 @@ ActiveRecord::Schema.define(version: 2021_03_19_045808) do
   add_foreign_key "oauth_access_grants", "users", column: "resource_owner_id"
   add_foreign_key "oauth_access_tokens", "oauth_applications", column: "application_id"
   add_foreign_key "oauth_access_tokens", "users", column: "resource_owner_id"
+  add_foreign_key "pokemons", "types"
 end
