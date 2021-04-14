@@ -2,6 +2,9 @@ class ImportPokemonsJob < ApplicationJob
   queue_as :default
   attr_reader :pokemons
 
+  # Initialize import pokemons job
+  #
+  # @param path [String, #read] path of the csv file
   def perform(path)
     @pokemons = []
     create_pokemons!(path)

@@ -44,3 +44,4 @@ gem 'paw', git: 'https://gitlab+deploy-token-85531:HBatzCDCALsz_RE2v6L1@gitlab.c
            branch: 'develop'
 gem 'sorcery'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'yard'
