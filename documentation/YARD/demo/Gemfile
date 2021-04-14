@@ -38,6 +38,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'doorkeeper'
+gem 'factory_bot_rails'
+gem 'faker'
 gem 'paw', git: 'https://gitlab+deploy-token-85531:HBatzCDCALsz_RE2v6L1@gitlab.com/emilioforrer/paw.git',
            branch: 'develop'
 gem 'sorcery'
