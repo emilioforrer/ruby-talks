@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 module CustomTokenErrorResponse
+  #  Override the body response
+  # @return [JSON] if a single object was returned
+  #   from the database.
   # :nocov:
   def body
     {
@@ -8,7 +11,7 @@ module CustomTokenErrorResponse
         {
           code: 400,
           field_name: 'base',
-          message: "Invalid token or grant type"
+          message: 'Invalid token or grant type'
         }
       ]
     }
