@@ -1,4 +1,5 @@
 module Presenters
+  # Pokemons Presenter
   class PokemonPresenter < Paw::Presenters::Api::BasePresenter
     property :id, documentation: { type: :integer }
     property :name

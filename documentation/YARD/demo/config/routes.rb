@@ -13,6 +13,11 @@ Rails.application.routes.draw do
           end
         end
       end
+      resources :users, only: [:me] do
+        collection do
+          get :me
+        end
+      end
     end
   end
 
