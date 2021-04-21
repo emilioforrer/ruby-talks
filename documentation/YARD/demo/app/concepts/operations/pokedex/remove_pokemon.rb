@@ -15,6 +15,8 @@ module Operations
       end
 
       # Method used to delete record
+      # @param [Hash] options the options to work on method
+      # @option options [ActiveRecord] :model Pokedex found above
       def delete!(options, **)
         options[:model].destroy
       end

@@ -35,6 +35,8 @@ class ImportPokemonsJob < ApplicationJob
                   image_url: "https://play.pokemonshowdown.com/sprites/gen#{record['Generation']}/#{image_name}.png" }
   end
 
+  # @example Print result of import
+  #   print_result!({rows: [1,2,3,4]}, 20) #=> "4 records of 20 inserted sucessfully" <br> "16 records of 20 were not inserted"
   def print_result!(import, total)
     success = import.rows.length
     failed =  total - success
