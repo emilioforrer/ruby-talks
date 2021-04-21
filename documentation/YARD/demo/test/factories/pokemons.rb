@@ -7,6 +7,6 @@ FactoryBot.define do
     defense { 1 }
     generation { 1 }
     legendary { false }
-    types { nil }
+    association :type
   end
 end
