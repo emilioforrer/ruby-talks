@@ -9,6 +9,7 @@ Rails.application.routes.draw do
         resources :pokedexes, only: [] do
           collection do
             post :add_pokemon
+            delete :remove_pokemon
           end
         end
       end

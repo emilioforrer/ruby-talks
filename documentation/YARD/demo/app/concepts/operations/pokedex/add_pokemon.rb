@@ -1,5 +1,6 @@
 module Operations
   module Pokedex
+    # Operation to add pokemon to pokedex
     class AddPokemon < Trailblazer::Operation
       delegate :error!, to: Paw::Utils
       pass :validate_pokemon!
