@@ -35,6 +35,8 @@ module Api
         error_responses: [401, 422, 500]
       )
 
+      # Endpoint to add pokemon to user pokedex
+      # @controller_action_param :pokemon_id [Fixnum] Pass the pokemon id user want to add
       def add_pokemon
         result = Operations::Pokedex::AddPokemon.call(
           create_options
@@ -42,6 +44,7 @@ module Api
         render json: result[:response]
       end
 
+      # @deprecated Use {#add_pokemon} instead.
       def create
         result = Operations::Pokedex::AddPokemon.call(
           create_options

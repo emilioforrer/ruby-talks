@@ -1,6 +1,13 @@
 class SeedPokedexJob < ApplicationJob
   queue_as :default
-  attr_reader :pokemons, :pokedex_limit
+
+  # @!attribute [r] pokemons
+  #   @return [Fixnum] represents the total of pokemons
+  attr_reader :pokemons
+
+  # @!attribute [r] pokedex_limit
+  #   @return [Fixnum] the size of the list represents the total of pokemons allowed per user
+  attr_reader :pokedex_limit
 
   def perform
     @pokemons = Pokemon.all
@@ -10,6 +17,8 @@ class SeedPokedexJob < ApplicationJob
       create_user!
     end
   end
+
+  private
 
   def create_user!
     user = User.create(first_name: ::Faker::Name.first_name, last_name: ::Faker::Name.last_name,

@@ -10,12 +10,13 @@ module Operations
 
       def validate_pokemon!(options, params:, **)
         options[:model] = Pokemon.find_by(id: params[:pokemon_id])
+        # @raise [::Paw::Exceptions::StandardError] if the pokemon is not found
         error!(status: 404, message: I18n.t('paw.api.messages.not_found')) if options[:model].nil?
       end
 
       def validate_pokedex_size!(options, current_user:, **)
         options[:pokedex] = current_user.pokemon_ids
-
+        # @raise [::Paw::Exceptions::StandardError] if the User reach the maximum of pokemons allowed
         error!(status: 403, message: 'User reached the maximum of pokemons allowed') if options[:pokedex].size >= 5
       end
 
