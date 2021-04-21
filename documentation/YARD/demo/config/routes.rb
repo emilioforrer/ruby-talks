@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :pokemons, only: [:index] do
+      resources :pokemons, only: %i[index show] do
         resources :pokedexes, only: [] do
           collection do
             post :add_pokemon

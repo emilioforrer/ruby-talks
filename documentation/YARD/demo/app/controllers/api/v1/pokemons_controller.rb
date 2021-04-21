@@ -27,6 +27,13 @@ module Api
         render json: result[:response]
       end
 
+      def show
+        result = Paw::Operations::Api::Finder.call(
+          **fetch_options
+        )
+        render json: result[:response]
+      end
+
       private
 
       def fetch_options
