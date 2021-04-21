@@ -1,10 +1,9 @@
 class ImportPokemonsJob < ApplicationJob
   queue_as :default
+  #  The attribute of +pokemons+ represents the total of pokemons
   attr_reader :pokemons
 
   # Initialize import pokemons job
-  #
-  # @param path [String, #read] path of the csv file
   def perform(path)
     @pokemons = []
     create_pokemons!(path)
@@ -23,6 +22,8 @@ class ImportPokemonsJob < ApplicationJob
     print_result!(import, records.length)
   end
 
+  # note::
+  #    This method should only be used to build the model
   def construct_model(record)
     type_id = record['Type'].present? ? Type.find_or_create_by(name: record['Type'])&.id : nil
     image_name = record['Name'].parameterize.gsub('-', '_')

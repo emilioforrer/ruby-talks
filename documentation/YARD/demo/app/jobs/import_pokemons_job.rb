@@ -1,6 +1,7 @@
 class ImportPokemonsJob < ApplicationJob
   queue_as :default
-  # @attr_reader [Array] pokemons represents the total of pokemons
+  # @!attribute [r] pokemons
+  #   @return [Array] represents the total of pokemons
   attr_reader :pokemons
 
   # Initialize import pokemons job
