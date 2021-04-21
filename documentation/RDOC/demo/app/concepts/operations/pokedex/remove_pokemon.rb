@@ -19,6 +19,11 @@ module Operations
       end
 
       # Method used to retrieve information to user
+      # :markup: markdown
+      # ``` ruby
+      # TEST CLASS RUBY EXAMPLE 
+      # data = { data: { message: 'Your pokemon was removed from pokedex', status: 200 } }
+      # ```
       def present!(options, **)
         data = { data: { message: 'Your pokemon was removed from pokedex', status: 200 } }
         options[:response] = data.to_json
