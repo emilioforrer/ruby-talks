@@ -23,4 +23,10 @@ class Api::V1::PokemonsControllerTest < ActionDispatch::IntegrationTest
         headers: { 'HTTP_AUTHORIZATION': "Bearer #{@token}" }
     assert_response :success
   end
+
+  test 'list captured pokemons' do
+    get captured_api_v1_pokemons_url,
+        headers: { 'HTTP_AUTHORIZATION': "Bearer #{@token}" }
+    assert_response :success
+  end
 end

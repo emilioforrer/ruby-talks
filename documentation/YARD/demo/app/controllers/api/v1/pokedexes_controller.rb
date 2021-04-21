@@ -4,7 +4,7 @@ module Api
   module V1
     # Interact with pokedex controller
     class PokedexesController < Api::V1::ApplicationController
-      skip_before_action :require_data!, only: [:add_pokemon,:remove_pokemon]
+      skip_before_action :require_data!, only: %i[add_pokemon remove_pokemon]
 
       Paw::SwaggerDoc.endpoint(
         path: 'api/v1/pokemons/:pokemon_id/pokedexes/remove_pokemon',
