@@ -233,7 +233,7 @@ Describe an options hash in a method. The tag takes the name of the options para
 
 Note that a @param tag need not be defined for the options hash itself, though it is useful to do so for completeness.
 
-This can be very helpful when we use Traiblazer operations
+This can be very helpful when we use Trailblazer operations
 
 Examples:
 
@@ -310,6 +310,21 @@ Examples:
 # @todo Add authentication method
 class User; end
 ```
+
+#### Nested Params
+
+There is not a tag for nested params, but according to the author of the gem, the approach will be the following:
+
+```ruby
+# @param [Hash<Symbol, Object>] options
+#   * :order (String) ["id.asc"] the query's order
+#   * :page_size (Integer) [25] the number of results per page
+#   * :where (Hash<String, Object> a list of query options
+#     * :name (String) get objects with given name
+#     * :owner (Integer) get objects with the given owner id
+```
+
+For more information on this, visit this [issue](https://github.com/lsegal/yard/issues/622) on the YARD gem
 
 ## Helpful Links
 

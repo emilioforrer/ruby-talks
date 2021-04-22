@@ -9,6 +9,10 @@ module Operations
 
       # Method used to valid if pokemon exist on user pokedex
       # @raise [::Paw::Exceptions::StandardError] if the pokemon has not been added to pokedex
+      # @param [Hash<Symbol, Object>] params
+      #   * :data (Hash<String, Object> node data where information will come
+      #     * :name (String) the given name
+      #     * :pokemon_id (Integer) pokemon id to be removed
       def model!(options, params:, current_user:, **)
         options[:model] = ::Pokedex.find_by(pokemon_id: params[:pokemon_id], user_id: current_user.id)
         error!(status: 404, message: I18n.t('paw.api.messages.not_found')) if options[:model].nil?
