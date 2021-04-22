@@ -116,7 +116,7 @@ Don't show public methods. (default shows public)
 
 #### --one-file
 
-Generates output as a single file on the doc folder wuth the name index.html
+Generates output as a single file on the doc folder with the name index.html
 
 #### --protected
 
@@ -328,10 +328,8 @@ For more information on this, visit this [issue](https://github.com/lsegal/yard/
 
 ## Helpful Links
 
-<https://rubydoc.info/gems/yard/file/docs/Tags.md>
-
-<https://gist.github.com/phansch/db18a595d2f5f1ef16646af72fe1fb0e>
-
-<https://docs.ruby-lang.org/en/2.0.0/RDoc/Markup.html>
-
-<http://rdoc.sourceforge.net/doc/>
+* **YARD TAGS:** <https://rubydoc.info/gems/yard/file/docs/Tags.md>
+* **YARD Cheatsheet:** <https://gist.github.com/phansch/db18a595d2f5f1ef16646af72fe1fb0e>
+* **RDOC Documentation:** <https://docs.ruby-lang.org/en/2.0.0/RDoc/Markup.html>
+* **RDOC resumed documentation:** <http://rdoc.sourceforge.net/doc/>
+* **Demo Link:** <https://www.loom.com/share/6d0b3a3266de46b08e41b887618b0367>
