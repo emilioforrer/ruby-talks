@@ -8,3 +8,4 @@
 * [Country State City](./country-state-city/README.md)
 * [SOAP Client](./soap-client)
 * [YARD vs RDOC](./documentation/README.md)
+* [ruby core](./ruby-core/README.md)
