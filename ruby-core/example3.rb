@@ -7,9 +7,7 @@ def splat_method(*arguments)
   puts
 end
 
-arguments = [1, 2, 3, 4]
-
-splat_method(arguments)
+splat_method(1, 2, 3, 4)
 
 # example4
 def double_splat_method(**options)

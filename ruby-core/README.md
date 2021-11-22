@@ -64,9 +64,7 @@ def my_method(*arguments)
     end
 end
 
-arguments = [1, 2, 3, 4]
-
-my_method(arguments)
+my_method(1, 2, 3, 4)
 ```
 Result:
 ```sh
